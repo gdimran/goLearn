@@ -34,3 +34,14 @@ car := struct{
 }*/
 
 //fmt.Println(car)
+type car struct{
+	make string
+	model string
+	mileage int
+}
+var c= car{
+	make: "Ford",
+	model: "Taurus",
+	mileage: 20000,
+}
+
