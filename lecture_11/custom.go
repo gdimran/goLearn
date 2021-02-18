@@ -34,6 +34,7 @@ car := struct{
 }*/
 
 //fmt.Println(car)
+
 type car struct{
 	make string
 	model string
