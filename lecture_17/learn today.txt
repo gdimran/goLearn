@@ -1,0 +1,10 @@
+কোডিং বুট ক্যাম্প :: net/http প্যাকেজ
+
+1. http package. What is handeler interface and how they work.
+2. How http protocol look like. 
+3. Header header file look like.
+4. Server response work.
+5. Different server response http code
+6. http respons and request message , how they look like
+7. http.ListenAndServe how it work
+8. How to create a webserver and publish our pages
