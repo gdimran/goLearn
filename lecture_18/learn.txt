@@ -1,0 +1,8 @@
+কোডিং বুট ক্যাম্প :: golang দিয়ে তৈরী প্রথম ওয়েবসাইট
+
+1. What is HTML Template and how they look like.
+2. GOlang html template template.gohtml
+3. How to use go html template and slice them into pices for work.
+4. How to use golang html view engine for html templeate BLOCK
+5. How to use container
+6. Finally how to deploy them into main function using Listen and serve and handle and handelfunc to mux the url.
