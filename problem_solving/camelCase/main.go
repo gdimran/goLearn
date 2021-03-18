@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"strings"
+
 )
 
 // var matchFirstCap = regexp.MustCompile("(.)([A-Z][a-z]+)")
@@ -17,24 +18,21 @@ import (
 // }
 func ToCamelCase(s string) string {
 
-	if strings.Contains(s, "_") {
-		i := strings.Index(s, "_")
-		if i > -1 {
-			//chars := s[i]
-			arefun := s[i+1]
-			changeCase := strings.ToUpper(arefun)
-			fmt.Println(changeCase)
-		}
-	} else if strings.Contains(s, "-") {
-		i := strings.Index(s, "-")
-		if i > -1 {
-			//chars := x[i]
-			arefun := s[i+1]
-			changeCase := strings.ToUpper(arefun)
-			fmt.Println(changeCase)
-		}
-	}
-	return changeCase
+	
+
+    i := strings.Index(s, "-")
+    fmt.Println("Index: ", i)
+    if i > -1 {
+        //chars := s[:i]
+        arefun := s[i+1:]
+       // fmt.Println(chars)
+        fmt.Println(arefun)
+    } else {
+        fmt.Println("Index not found")
+        fmt.Println(s)
+    }
+
+	return s
 }
 func main() {
 

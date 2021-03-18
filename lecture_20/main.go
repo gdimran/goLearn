@@ -13,7 +13,7 @@ var db *sql.DB
 var err error
 
 func init() {
-	db, err = sql.Open("mysql", "root:mysql@tcp(127.0.0.1:3306)/go_hosting_db")
+	db, err = sql.Open("mysql", "admin:123456@tcp(127.0.0.1:3306)/go_hosting_db")
 	if err != nil {
 		panic(err)
 	}
@@ -68,7 +68,7 @@ func request(w http.ResponseWriter, r *http.Request) {
 	company := r.FormValue("company")
 	email := r.FormValue("email")
 
-	qs := "INSERT INTO `requestform` (`id`, `name`, `company`, `email`, `status`) VALUES (NULL,'%s', '%s', '%s', '1')"
+	qs := "INSERT INTO `request` (`id`, `name`, `company`, `email`, `status`) VALUES (NULL,'%s', '%s', '%s', '1')"
 	sql := fmt.Sprintf(qs, name, company, email)
 	insert, err := db.Query(sql)
 	if err != nil {
