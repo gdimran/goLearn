@@ -1,5 +1,7 @@
 github.com/avct/uasurfer v0.0.0-20191028135549-26b5daa857f1 h1:9h8f71kuF1pqovnn9h7LTHLEjxzyQaj0j1rQq5nsMM4=
 github.com/avct/uasurfer v0.0.0-20191028135549-26b5daa857f1/go.mod h1:noBAuukeYOXa0aXGqxr24tADqkwDO2KRD15FsuaZ5a8=
+github.com/boombuler/barcode v1.0.1 h1:NDBbPmhS+EqABEs5Kg3n/5ZNjy73Pz7SIV+KCeqyXcs=
+github.com/boombuler/barcode v1.0.1/go.mod h1:paBWMcWSl3LHKBqUq+rly7CNSldXjb2rDl3JlRe0mD8=
 github.com/couchbase/go-couchbase v0.0.0-20210315170323-a90490f332ff h1:4GNZ1OK5RwJur3RFhVZRg1Gnij8nGLRFE5YLVPCVD20=
 github.com/couchbase/go-couchbase v0.0.0-20210315170323-a90490f332ff/go.mod h1:+/bddYDxXsf9qt0xpDUtRR47A2GjaXmGGAqQ/k3GJ8A=
 github.com/couchbase/gocb v1.6.7 h1:3sED4tqmzuKOQU2I/4u8ljrIXBe4lCzYhuD+/kPCyqs=

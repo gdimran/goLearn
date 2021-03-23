@@ -11,6 +11,7 @@ func Solve(arr []int) int {
 		for j := 2; j < arr[i]; j++ {
 			if arr[i]%j == 0 {
 				count = 1
+				g
 				break
 			}
 		}

@@ -4,6 +4,7 @@ go 1.16
 
 require (
 	github.com/avct/uasurfer v0.0.0-20191028135549-26b5daa857f1 // indirect
+	github.com/boombuler/barcode v1.0.1 // indirect
 	github.com/couchbase/go-couchbase v0.0.0-20210315170323-a90490f332ff // indirect
 	github.com/couchbase/gocb/v2 v2.2.2
 	github.com/couchbase/gomemcached v0.1.2 // indirect
