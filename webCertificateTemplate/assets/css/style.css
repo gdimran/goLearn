@@ -77,6 +77,16 @@ page[size="A4"][layout="portrait"] {
     height: 21cm;
 }
 
+page[size="Letter"] {
+    width: 21.59cm;
+    height: 27.94cm;
+}
+
+page[size="Letter"][layout="portrait"] {
+    width: 27.94cm;
+    height: 21.59cm;
+}
+
 @media print {
     body,
     page {
@@ -189,10 +199,10 @@ page[size="A4"][layout="portrait"] {
 /*---page style----*/
 
 page div.Certificate-container {
-    width: 29.7cm;
+    width: 27.94cm;
     margin: 0;
     overflow: hidden;
-    height: 21cm;
+    height: 21.59cm;
 }
 
 page div.certificate-bg {
@@ -208,6 +218,7 @@ page div.bg-property {
 
 page div.bg-property img {
     width: 100%;
+    height: 21.59cm;
 }
 
 page div.authorize-section {
