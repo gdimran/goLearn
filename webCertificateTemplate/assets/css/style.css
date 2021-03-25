@@ -235,7 +235,7 @@ page div.bg-property {
 }
 
 page div.bg-property img {
-    width: 100%;
+    /* width: 100%;*/
     height: 21.59cm;
 }
 
@@ -254,6 +254,7 @@ page div.authorize-section {
 }
 
 .bg-property {
+    width: 100%;
     position: absolute;
     z-index: 1;
 }
