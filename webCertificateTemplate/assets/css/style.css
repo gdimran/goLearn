@@ -53,6 +53,16 @@
     }
 } */
 
+html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -63,8 +73,6 @@ page {
     background: rgb(180, 180, 180);
     display: block;
     margin: 0 auto;
-    margin-bottom: 0.5cm;
-    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
 }
 
 page[size="A4"] {
@@ -87,18 +95,28 @@ page[size="Letter"][layout="portrait"] {
     height: 21.59cm;
 }
 
+@page {
+    width: 27.94cm;
+    height: 21.59cm;
+    margin: 0;
+}
+
 @media print {
     body,
     page {
-        margin: 0;
+        margin: 0 !important;
+        padding: 0 !important;
         box-shadow: 0;
+        width: 27.94cm;
+        height: 21.59cm;
     }
     .text-center {
         text-align: center;
     }
     .certificate-bg {
-        width: 29.7cm;
-        height: 21cm;
+        width: 27.94cm;
+        height: 21.59cm;
+        margin: 0 !important;
     }
     .inner-container {
         padding: 90px 80px;
