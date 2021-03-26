@@ -3,29 +3,25 @@ package main
 import "fmt"
 
 func Solve(arr []int) int {
-	//var sieve []int
+	N := len(arr)
 	var primes []int
-	total := 0
-	for i := 2; i < len(arr); i++ {
-		count := 0
-		for j := 2; j < arr[i]; j++ {
-			if arr[i]%j == 0 {
-				count = 1
-				g
-				break
-			}
+	b := make([]bool, N)
+	for i := 2; i < N; i++ {
+		if b[i] == true {
+			continue
 		}
-		if count == 0 {
-			primes[total] = arr[i]
-			total++
+		primes = append(primes, i)
+		for k := i * i; k < N; k += i {
+			b[k] = true
 		}
 	}
-	fmt.Println("prime numbers: ")
-	for i := 0; i < total; i++ {
-		fmt.Println(primes[i])
+	sum := 0
+	for _, p := range primes {
+		//fmt.Println(p)
+		sum += p
 	}
-	return 0
-	//sum:=0
+	fmt.Println(sum)
+	return sum
 
 }
 

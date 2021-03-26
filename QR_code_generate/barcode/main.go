@@ -31,6 +31,13 @@ func viewCodeHandler(w http.ResponseWriter, r *http.Request) {
 
 	qrCode, _ := qr.Encode(dataString, qr.L, qr.Auto)
 	qrCode, _ = barcode.Scale(qrCode, 512, 512)
+	//png.Encode(w, qrCode)
+	//pngCode := png.Encode(qrCode)
 
+	incPage := Page{Title: "View QR Code"}
+
+	t, _ := template.ParseFiles("barCode_view.gohtml")
 	png.Encode(w, qrCode)
+	t.Execute(w, incPage)
+
 }
