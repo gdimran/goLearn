@@ -4,6 +4,7 @@ go 1.16
 
 require (
 	github.com/360EntSecGroup-Skylar/excelize v1.4.1 // indirect
+	github.com/Mahmud139/vatcalculator v0.0.0-20210402181604-54538a95dc15
 	github.com/avct/uasurfer v0.0.0-20191028135549-26b5daa857f1 // indirect
 	github.com/boombuler/barcode v1.0.1
 	github.com/couchbase/go-couchbase v0.0.0-20210315170323-a90490f332ff // indirect
